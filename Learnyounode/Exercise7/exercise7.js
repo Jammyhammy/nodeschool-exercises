@@ -37,6 +37,10 @@
   which you have to explicitly convert to Strings.
 
 */
-var mymodule = require('./myModule.js')
+var myHttpGet = require('./myHttpGet.js')
+/*console.log("Argument #1:" + process.argv[1])
+console.log("Argument #2:" + process.argv[2])
+console.log("Argument #3:" + process.argv[3])
+console.log("Argument #3:" + process.argv[4])*/
 
-mymodule()
+myHttpGet.httpget(process.argv[2].toString())
