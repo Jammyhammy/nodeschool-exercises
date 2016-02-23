@@ -1,6 +1,6 @@
 var bl = require('bl')
 var hr = require('hyperquest')
-//http://stackoverflow.com/questions/12571744/push-functions-into-an-array-loop-through-and-splice
+
 
 function GetURL(theUrl) {
   return function(callback) {

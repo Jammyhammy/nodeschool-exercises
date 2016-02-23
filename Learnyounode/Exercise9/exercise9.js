@@ -32,6 +32,10 @@
  any external helper library.
 
 ─────────────────────────────────────────────────────────────────────────────*/
+//TODO: Get rid of all the external libraries, as an experienced developer
+//      I can totally handle hardmode.
+
+
 var myHttpGet = require('./myHttpGet.js')
 /*console.log("Argument #1:" + process.argv[1])
 console.log("Argument #2:" + process.argv[2])
