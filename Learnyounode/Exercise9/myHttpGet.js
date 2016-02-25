@@ -11,9 +11,15 @@ function GetURL(theUrl) {
   }
 }
 
+function GetURLDone(){
+
+}
+
 var HttpGetter = function () {
-  this.argsIndex = 2
-  this.argsEnd = (process.argv.length - this.argsIndex)
+  this.urllist = process.argv.slice(2)
+  var urllength = Number(this.urllist.length)
+  this.urllist.forEach(function(url) {console.log(url)
+                                 console.log("Length:" + --(urllength))})
   this.hamster = []
 }
 
@@ -24,5 +30,12 @@ HttpGetter.prototype.httpget = function(theUrl) {
       console.log(theOut)
     }))
   }
+
+HttpGetter.prototype.httpget = function(theUrl) {
+  hr(theUrl).pipe(bl(function(err, data) {
+    var theOut = data.toString()
+    console.log(theOut)
+  }))
+}
 
 module.exports = new HttpGetter()

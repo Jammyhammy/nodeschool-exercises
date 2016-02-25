@@ -43,5 +43,4 @@ console.log("Argument #3:" + process.argv[3])
 console.log("Argument #3:" + process.argv[4])*/
 
 
-console.log(process.argv.length)
 //myHttpGet.httpget(process.argv.)
