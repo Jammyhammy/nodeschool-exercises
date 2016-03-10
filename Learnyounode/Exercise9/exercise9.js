@@ -44,3 +44,4 @@ console.log("Argument #3:" + process.argv[4])*/
 
 
 //myHttpGet.httpget(process.argv.)
+myHttpGet.Launch()
